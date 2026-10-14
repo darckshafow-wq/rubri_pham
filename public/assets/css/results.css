@@ -1,0 +1,76 @@
+/* ==========================================================================
+   Phama Garde - Styles Résultats de Recherche (results.css)
+   ========================================================================== */
+
+.filter-bar {
+    background: #ffffff;
+    border-radius: var(--pharm-border-radius);
+    padding: 18px 24px;
+    box-shadow: var(--pharm-shadow);
+    margin-bottom: 30px;
+}
+
+.pharmacy-result-card {
+    background: #ffffff;
+    border: none;
+    border-radius: var(--pharm-border-radius);
+    box-shadow: var(--pharm-shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+}
+
+.pharmacy-result-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--pharm-shadow-hover);
+}
+
+.pharmacy-result-card.is-guard {
+    border-left: 6px solid #198754;
+}
+
+.pharmacy-result-card.not-guard {
+    border-left: 6px solid #adb5bd;
+}
+
+.status-pill-guard {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 5px 12px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.status-pill-guard::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #198754;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.status-pill-off {
+    background-color: #e9ecef;
+    color: #6c757d;
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 5px 12px;
+    border-radius: 50px;
+}
+
+.phone-link {
+    color: #198754;
+    font-weight: 700;
+    font-size: 1.05rem;
+    text-decoration: none;
+}
+
+.phone-link:hover {
+    color: #146c43;
+    text-decoration: underline;
+}
+

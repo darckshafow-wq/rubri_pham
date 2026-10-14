@@ -1,0 +1,175 @@
+/* ==========================================================================
+   Phama Garde - Styles Page Détail Pharmacie (detail.css)
+   Couleurs : Vert Pharmacie Émeraude (#10b981, #059669) & Cartes Épurées
+   ========================================================================== */
+
+.detail-hero {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    padding: 40px 0 65px;
+    position: relative;
+}
+
+.detail-breadcrumbs {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 20px;
+}
+
+.detail-breadcrumbs a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.detail-breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.detail-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.detail-main-card {
+    background: #ffffff;
+    border-radius: var(--pharm-border-radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 35px;
+    margin-top: -35px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    position: relative;
+    z-index: 10;
+}
+
+.detail-guard-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+}
+
+.detail-guard-badge.active {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #a3cfbb;
+}
+
+.detail-guard-badge.active::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #198754;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 10px #198754;
+    animation: pulseDot 1.5s infinite;
+}
+
+@keyframes pulseDot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.8); }
+}
+
+.detail-guard-badge.inactive {
+    background-color: #e9ecef;
+    color: #495057;
+    border: 1px solid #ced4da;
+}
+
+.btn-call-emergency {
+    background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 800;
+    padding: 16px 28px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-decoration: none;
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.35);
+    transition: all 0.2s ease;
+    width: 100%;
+}
+
+.btn-call-emergency:hover {
+    background: #047857;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.45);
+}
+
+.info-item-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 18px;
+    border-radius: 12px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 16px;
+}
+
+.info-item-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+    background: #d1fae5;
+    color: #059669;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.map-placeholder-box {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    border-radius: 14px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    border: 1px solid #334155;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.map-placeholder-box i.map-bg-icon {
+    position: absolute;
+    right: -25px;
+    bottom: -25px;
+    font-size: 8.5rem;
+    opacity: 0.08;
+    color: white;
+    pointer-events: none;
+}
+
+/* Responsive Mobile */
+@media (max-width: 767.98px) {
+    .detail-hero {
+        padding: 30px 0 50px;
+    }
+    .detail-title {
+        font-size: 1.6rem;
+    }
+    .detail-main-card {
+        padding: 20px;
+        margin-top: -25px;
+    }
+    .btn-call-emergency {
+        font-size: 1.05rem;
+        padding: 14px 20px;
+    }
+    .info-item-box {
+        padding: 14px;
+    }
+}

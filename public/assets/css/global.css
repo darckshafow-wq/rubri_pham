@@ -1,0 +1,62 @@
+/* ==========================================================================
+   Phama Garde - Styles Globaux (global.css)
+   Thème : Vert médical & pharmacie moderne
+   ========================================================================== */
+
+:root {
+    --pharm-primary: #198754;
+    --pharm-primary-dark: #146c43;
+    --pharm-primary-light: #20c997;
+    --pharm-accent: #0dcaf0;
+    --pharm-danger: #dc3545;
+    --pharm-warning: #ffc107;
+    --pharm-bg: #f8f9fa;
+    --pharm-card-bg: #ffffff;
+    --pharm-text: #212529;
+    --pharm-muted: #6c757d;
+    --pharm-border-radius: 12px;
+    --pharm-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --pharm-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+body {
+    background-color: var(--pharm-bg);
+    color: var(--pharm-text);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* Navbar */
+.bg-pharmacy {
+    background: linear-gradient(135deg, var(--pharm-primary) 0%, var(--pharm-primary-dark) 100%);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    font-size: 1.35rem;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+/* Alertes Flash */
+.alert {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer */
+footer {
+    border-top: 3px solid var(--pharm-primary);
+}
+

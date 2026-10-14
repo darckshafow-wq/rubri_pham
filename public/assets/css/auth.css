@@ -1,0 +1,73 @@
+/* ==========================================================================
+   Phama Garde - Styles Authentification & Inscription (auth.css)
+   ========================================================================== */
+
+.auth-container {
+    max-width: 580px;
+    margin: 40px auto;
+}
+
+.auth-card {
+    background: #ffffff;
+    border-radius: var(--pharm-border-radius);
+    box-shadow: var(--pharm-shadow);
+    border: none;
+    overflow: hidden;
+}
+
+.auth-card .nav-tabs {
+    border-bottom: 2px solid #e9ecef;
+    background-color: #fcfcfc;
+}
+
+.auth-card .nav-link {
+    color: var(--pharm-muted);
+    font-weight: 600;
+    padding: 14px 20px;
+    border: none;
+    border-bottom: 3px solid transparent;
+}
+
+.auth-card .nav-link.active {
+    color: var(--pharm-primary);
+    background-color: #ffffff;
+    border-bottom: 3px solid var(--pharm-primary);
+}
+
+.auth-card .btn-submit {
+    background: linear-gradient(135deg, var(--pharm-primary) 0%, var(--pharm-primary-dark) 100%);
+    color: white;
+    font-weight: 600;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.auth-card .btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(25, 135, 84, 0.3);
+    color: white;
+}
+
+.form-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #495057;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--pharm-primary);
+    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.2);
+}
+
+.info-banner {
+    background-color: #e8f5e9;
+    border-left: 4px solid var(--pharm-primary);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: #2e7d32;
+    margin-bottom: 18px;
+}
+

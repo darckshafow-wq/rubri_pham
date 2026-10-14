@@ -1,0 +1,16 @@
+# Environnement et fichiers temporaires
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# Sessions et cache locaux
+sessions/
+tmp/
+cache/
+
+# IDE et éditeurs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

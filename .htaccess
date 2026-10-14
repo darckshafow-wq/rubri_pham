@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteBase /
+
+# Servir les assets statiques depuis public/assets/
+RewriteCond %{REQUEST_URI} ^/assets/ [NC]
+RewriteCond %{DOCUMENT_ROOT}/public%{REQUEST_URI} -f
+RewriteRule ^assets/(.*)$ public/assets/$1 [L]
+
+# Rediriger tout le reste vers le front controller
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/index.php [QSA,L]
+
